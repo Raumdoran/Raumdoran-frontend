@@ -57,7 +57,8 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: black !important;
-  margin-left: 120px;
+  /* margin-left: 90px; */
+  margin-left: 80px;
 }
 
 .menu {
@@ -66,6 +67,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .as {
@@ -144,4 +146,26 @@ a {
   height: 55%;
   border-radius: 15px;
   background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.account-title {
+  font-weight: bold;
+  font-size: 20pt;
+  margin-top: 45px;
+}
+
+.acc-email {
+  width: 250px;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.acc-password {
+  width: 250px;
+  height: 30px;
+  margin-top: 20px;
 }
