@@ -36,9 +36,9 @@ export default function NAV(){
                 </div>
             </div>
             <div className="menu">
-                <Link href={"/event"}>
+                <Link href={"/session"}>
                 <p 
-                className="space">공모전</p>
+                className="space">세션 찾기</p>
                 </Link>
                 <Link href={"/openlib"}>
                     <p className="space">자유</p>
@@ -49,7 +49,7 @@ export default function NAV(){
                 <Link href={"/webtoon"}>
                     <p className="space">웹 만화</p>
                 </Link>
-                <Link href={"/library"}>
+                <Link href={"/kr/library"}>
                     <p className="space as">내 도서관</p>
                 </Link>
             </div>

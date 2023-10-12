@@ -2,11 +2,12 @@ body {
   margin: 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  height: 100%;
+  overflow: scroll;
  } 
 ::-webkit-scrollbar {
   display: none;
 }
-
 .home {
   width: 100vw;
   height: 55px;
@@ -87,12 +88,31 @@ a {
 
 .bookshelf{
   width: 100vw;
+  /* overflow: scroll; */
   height: auto;
   /* height: 100vh; */
-  background-color: hotpink;
+  /* background-color: hotpink; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.title {
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 7.5pt;
+}
+
+.author {
+  margin-top: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 7.5pt;
+  color: #707070;
+}
+
+.metadata {
+  margin-top: -15px;
 }
 
 .fonts {
@@ -104,12 +124,29 @@ a {
 
 .book {
   width: 90px;
-  height: 120px;
-  background-color: blueviolet;
+  height: 150px;
+  margin-left: 15px;
+  /* background-color: blueviolet; */
 }
 
 .top {
   margin-top: 20px;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 225px;
 }
 
 .footer {
@@ -117,12 +154,21 @@ a {
   width: 100vw;
   height: 300px;
   background-color: darkorange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+}
+
+.footer-cell {
+  
 }
 
 .notice {
   width: 100vw;
   height: 90px;
-  background-color: blue;
+  background-color: bisque;
+  /* background-color: blue; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,4 +214,31 @@ a {
   width: 250px;
   height: 30px;
   margin-top: 20px;
+}
+
+#wrapper{
+  height : 100%;
+}
+
+.ls-head{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #EBECF0;
+}
+
+.ls-lcb {
+  width: 55%;
+  height: 55%;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.ls-logo {
+  margin-top: 10%;
 }
