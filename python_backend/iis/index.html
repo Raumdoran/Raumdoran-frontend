@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN Redirect Page</title>
+</head>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+    $.get("https://ipinfo.io", function(response) {
+        <!-- alert(response.ip); -->
+        console.log(response)
+        document.getElementById("option").innerText=response.ip;
+        document.getElementById("option1").innerText=response.city + "&" + response.country;
+    }, "json")
+</script>
+<body>
+    <h3>CDN File Response Server</h3>
+    <p>Owner : Raumdoran 0A</p>
+    <h4>Server Status</h4>
+    <p>Raumdoran : OK</p>
+    <p>Raumdoran-CDN : OK</p>
+    <p>Raumdoran-DB : OK</p>
+    <h4>Connection Infomation</h4>
+    <p id="option1"></p>
+    <p id="option"></p>
+</body>
+</html>
