@@ -1,6 +1,5 @@
 {
-  "/page": "app/page.js",
-  "/kr/page": "app/kr/page.js",
-  "/kr/account/page": "app/kr/account/page.js",
+  "/not-found": "app/not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/kr/library/page": "app/kr/library/page.js"
 }
