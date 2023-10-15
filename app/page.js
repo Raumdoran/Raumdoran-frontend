@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home(){
   let server_region = ['Daejin University', 'Duitan University']
-  let server_status = ['OK', 'OK']
+  let server_status = ['OK', 'Fail']
   return (
     <div style={{"marginLeft":"15px"}}>
       <title>RaumDoran Warp Page</title>
